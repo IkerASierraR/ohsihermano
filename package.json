@@ -10,7 +10,10 @@
     "dev:electron": "wait-on http://localhost:5173 && electron electron.cjs",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+
+    /* ✔ FIX para Railway/Render/Deploy */
+    "postinstall": "npm install --legacy-peer-deps"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.1",
